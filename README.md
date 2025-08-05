@@ -32,7 +32,9 @@
 
 
 ## 📺 循迹视频
-![](images/car.gif)
+<div align="center">
+  <img src="images/car.gif" alt="循迹演示" width="1000">
+</div>
 
 
 📮[choucisan@gmail.com]
