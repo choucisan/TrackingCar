@@ -1,40 +1,49 @@
 ![](images/car.png)
-# [电赛] Ti SMPG03507黑线循迹小车
+# [E-Design Contest] Ti SMPG03507 Black-Line Following Car
 
-## 🎯 项目介绍
-本项目基于 TI SMPG03507 控制主板，结合 感为无 MCU 灰度传感器 和 MPU6050 陀螺仪，通过 PID 算法动态调节左右轮电机转速，实现黑线循迹控制。小车可识别黑线并进行稳定跟踪，适用于智能交通、智能机器人等基础应用场景。
----
+## 🎯 Project Introduction
 
+This project is based on the TI SMPG03507 control board, combined with Ganwei non-MCU grayscale sensors and MPU6050 gyroscope.
+Using the PID algorithm, it dynamically adjusts the left and right wheel motor speeds to achieve black-line tracking.
+The car can detect black lines and follow them stably, suitable for applications such as intelligent transportation and robotics.
 
-## 🛠️ 硬件清单
--主板：Ti SMPG03507\
--灰度传感器：感为无mcu灰度传感器\
--电机驱动：tb6612\
--电机：轮趣G310\
--陀螺仪：mcu6050\
--传感器：感为无mcu灰度传感器\
--屏幕：oled
+⸻
 
-##  🧩 项目特色
-• 模块化设计：传感器、电机驱动、电机独立集成，便于调试与替换\
-• PID 控制环：通过速度环 PID 实现平稳调速\
-• 硬件实时调节：使用 MPU6050 陀螺仪提升车身姿态稳定性\
-• 高兼容性：支持二次开发与拓展
+## 🛠️ Hardware List
+	•	Main Board: Ti SMPG03507
+	•	Grayscale Sensor: Ganwei non-MCU grayscale sensor
+	•	Motor Driver: TB6612
+	•	Motors: Lunqu G310
+	•	Gyroscope: MPU6050
+	•	Display: OLED
 
+⸻
 
-## ⚙️控制思路
-•灰度传感器阵列输出对应左右侧偏差信息\
-•通过主控获取左右灰度差值作为 PID 输入\
-•使用 MPU6050 获取转向角速度并辅助调整电机输出\
-•PID 输出控制 TB6612 电机驱动模块，调节左右电机速度\
-•达到保持小车稳定在黑线上前进的效果
+## 🧩 Project Features
+	•	Modular Design: Independent integration of sensors, motor drivers, and motors for easier debugging and replacement
+	•	PID Control Loop: Smooth speed regulation through speed-loop PID
+	•	Real-Time Hardware Adjustment: Uses MPU6050 gyroscope to enhance chassis stability
+	•	High Compatibility: Supports secondary development and expansion
 
+⸻
 
+## ⚙️ Control Logic
+	•	The grayscale sensor array outputs deviation information for the left and right sides
+	•	The controller calculates left-right grayscale difference as PID input
+	•	MPU6050 measures angular velocity to assist motor output adjustment
+	•	PID output controls the TB6612 motor driver, adjusting left and right motor speeds
+	•	This ensures the car moves stably along the black line
 
-## 📺 循迹视频
+⸻
+
+## 📺 Line-Following Demo
+
 <div align="center">
-  <img src="images/car.gif" alt="循迹演示" width="1000">
+  <img src="images/car.gif" alt="Line-Following Demo" width="1000">
 </div>
 
 
-📮[choucisan@gmail.com]
+
+⸻
+
+📧[choucisan@gmail.com]
