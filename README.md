@@ -10,29 +10,29 @@ The car can detect black lines and follow them stably, suitable for applications
 ⸻
 
 ## 🛠️ Hardware List
-	•	Main Board: Ti SMPG03507
-	•	Grayscale Sensor: Ganwei non-MCU grayscale sensor
-	•	Motor Driver: TB6612
-	•	Motors: Lunqu G310
-	•	Gyroscope: MPU6050
-	•	Display: OLED
+- Main Board: Ti SMPG03507
+- Grayscale Sensor: Ganwei non-MCU grayscale sensor
+- Motor Driver: TB6612
+- Motors: Lunqu G310
+- Gyroscope: MPU6050
+- Display: OLED
 
 ⸻
 
 ## 🧩 Project Features
-	•	Modular Design: Independent integration of sensors, motor drivers, and motors for easier debugging and replacement
-	•	PID Control Loop: Smooth speed regulation through speed-loop PID
-	•	Real-Time Hardware Adjustment: Uses MPU6050 gyroscope to enhance chassis stability
-	•	High Compatibility: Supports secondary development and expansion
+- Modular Design: Independent integration of sensors, motor drivers, and motors for easier debugging and replacement
+- PID Control Loop: Smooth speed regulation through speed-loop PID
+- Real-Time Hardware Adjustment: Uses MPU6050 gyroscope to enhance chassis stability
+- High Compatibility: Supports secondary development and expansion
 
 ⸻
 
 ## ⚙️ Control Logic
-	•	The grayscale sensor array outputs deviation information for the left and right sides
-	•	The controller calculates left-right grayscale difference as PID input
-	•	MPU6050 measures angular velocity to assist motor output adjustment
-	•	PID output controls the TB6612 motor driver, adjusting left and right motor speeds
-	•	This ensures the car moves stably along the black line
+- The grayscale sensor array outputs deviation information for the left and right sides
+- The controller calculates left-right grayscale difference as PID input
+- MPU6050 measures angular velocity to assist motor output adjustment
+- PID output controls the TB6612 motor driver, adjusting left and right motor speeds
+- This ensures the car moves stably along the black line
 
 ⸻
 
